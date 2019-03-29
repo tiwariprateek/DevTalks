@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "901369623203",
+    "firebase_url": "https://devtalks-87256.firebaseio.com",
+    "project_id": "devtalks-87256",
+    "storage_bucket": "devtalks-87256.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:901369623203:android:32ef226656e73387",
+        "android_client_info": {
+          "package_name": "com.example.devtalks"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "901369623203-e2dupvil5o1ed1t75jf2kqb9mcp9r9f0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBv6jdc5NmBfx5vUSjGpbTRyyq302BIpXQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

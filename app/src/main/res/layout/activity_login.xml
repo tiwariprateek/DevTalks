@@ -4,40 +4,43 @@
                                              android:layout_height="match_parent"
                                              android:background="@android:color/holo_green_light">
 
-    <TextView
-            android:layout_width="0dp"
-            android:layout_height="50dp"
-            android:id="@+id/email_edittext_login" android:background="@android:color/white"
-            android:hint="Username" android:layout_marginStart="24dp" app:layout_constraintStart_toStartOf="parent"
-            android:layout_marginEnd="24dp" app:layout_constraintEnd_toEndOf="parent" android:layout_marginBottom="32dp"
-            app:layout_constraintBottom_toTopOf="@+id/password_edittext_login" android:layout_marginTop="8dp"
-            app:layout_constraintTop_toTopOf="parent" app:layout_constraintHorizontal_bias="0.498"
-            app:layout_constraintVertical_bias="1.0" android:textSize="18sp"/>
-    <TextView
-            android:layout_width="0dp"
-            android:layout_height="50dp" tools:layout_editor_absoluteY="315dp"
-            android:id="@+id/password_edittext_login"
-            android:background="@android:color/white" android:hint="Password" android:layout_marginStart="24dp"
-            app:layout_constraintStart_toStartOf="parent" android:layout_marginEnd="24dp"
-            app:layout_constraintEnd_toEndOf="parent"/>
     <Button
             android:text="Login"
             android:layout_width="0dp"
             android:layout_height="50dp"
             android:id="@+id/login_button_login"
-            app:layout_constraintTop_toBottomOf="@+id/password_edittext_login" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
             android:layout_marginStart="24dp" app:layout_constraintEnd_toEndOf="parent"
-            android:layout_marginEnd="24dp" app:layout_constraintHorizontal_bias="0.0" android:layout_marginTop="32dp"
-            android:background="@android:color/holo_green_dark"/>
+            android:layout_marginEnd="24dp" app:layout_constraintHorizontal_bias="0.0"
+            android:background="@drawable/rounded_button" android:layout_marginTop="32dp"
+            app:layout_constraintTop_toBottomOf="@+id/password_edittext_login"/>
     <TextView
             android:text="Back to Register screen??"
             android:layout_width="0dp"
             android:layout_height="40dp"
             android:id="@+id/back_to_register_textview" app:layout_constraintStart_toStartOf="parent"
             android:layout_marginStart="24dp"
-            app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="24dp" android:layout_marginBottom="52dp"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="24dp"
             app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintHorizontal_bias="1.0"
             android:layout_marginTop="32dp" app:layout_constraintTop_toBottomOf="@+id/login_button_login"
             app:layout_constraintVertical_bias="0.0" android:textColor="@android:color/black"
             android:textAlignment="center" android:textStyle="bold"/>
+    <EditText
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:id="@+id/email_edittext_login" android:background="@drawable/rounded_edittext_register_login"
+            android:hint="Email" android:layout_marginStart="24dp" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginEnd="24dp" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            android:textSize="18sp"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="132dp"/>
+    <EditText
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:id="@+id/password_edittext_login"
+            android:background="@drawable/rounded_edittext_register_login" android:hint="Password" android:layout_marginStart="24dp"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginEnd="24dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="32dp" app:layout_constraintTop_toBottomOf="@+id/email_edittext_login"/>
 </android.support.constraint.ConstraintLayout>
