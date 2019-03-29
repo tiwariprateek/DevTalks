@@ -38,6 +38,7 @@ class MainActivity : AppCompatActivity() {
             .addOnCompleteListener {
                 if (!it.isSuccessful) return@addOnCompleteListener
                 Log.d("Main", "Sucessfully created user using uid: ${it.result?.user?.uid}")
+                Toast.makeText(this,"You have sucessfully created account",Toast.LENGTH_SHORT).show()
             }
             .addOnFailureListener {
                 Log.d("Main", "Failiure ${it.message}")
