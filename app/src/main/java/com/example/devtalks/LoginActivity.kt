@@ -7,7 +7,7 @@ import android.util.Log
 import android.widget.Toast
 import com.google.firebase.auth.FirebaseAuth
 import kotlinx.android.synthetic.main.activity_login.*
-import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.activity_register.*
 
 class LoginActivity:AppCompatActivity(){
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -25,6 +25,7 @@ class LoginActivity:AppCompatActivity(){
              .addOnFailureListener {
                  Log.d("Login","Failure with uid: ${it.message}")
                  Toast.makeText(this,"Imvalid Credentials ",Toast.LENGTH_SHORT).show()
+
              }
      }
 
