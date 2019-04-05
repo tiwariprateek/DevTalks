@@ -6,7 +6,6 @@ import android.os.Bundle
 import android.support.v7.widget.LinearLayoutManager
 import android.util.Log
 import com.example.devtalks.R
-import com.example.devtalks.chatlogActivity
 import com.example.devtalks.models.User
 
 import com.google.firebase.database.DataSnapshot
@@ -58,7 +57,7 @@ class NewMessageActivity : AppCompatActivity() {
                 }
                 adapter.setOnItemClickListener { item, view ->
                     val userItem=item as UserItem
-                    val intent=Intent(view.context,chatlogActivity::class.java)
+                    val intent=Intent(view.context, chatlogActivity::class.java)
                     intent.putExtra(USER_KEY,userItem.user)
                     startActivity(intent)
                     finish()

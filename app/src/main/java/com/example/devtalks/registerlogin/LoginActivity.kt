@@ -1,9 +1,11 @@
 package com.example.devtalks.registerlogin
 
+import android.content.Intent
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.util.Log
 import android.widget.Toast
+import com.example.devtalks.Messages.LatestMessagesActivity
 import com.example.devtalks.R
 import com.google.firebase.auth.FirebaseAuth
 import kotlinx.android.synthetic.main.activity_login.*
@@ -19,6 +21,8 @@ class LoginActivity:AppCompatActivity(){
          FirebaseAuth.getInstance().signInWithEmailAndPassword(email,password)
              .addOnCompleteListener {
                  if (!it.isSuccessful)return@addOnCompleteListener
+                 val intent=Intent(this,LatestMessagesActivity::class.java)
+                 startActivity(intent)
                  Log.d("Login","Loged in using Email and password with uid ${it.result?.user?.uid}")
              }
              .addOnFailureListener {
