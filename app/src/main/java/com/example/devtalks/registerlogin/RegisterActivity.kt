@@ -82,6 +82,7 @@ class RegisterActivity : AppCompatActivity() {
         if (selectedPhotoUri == null) return
         val filename = UUID.randomUUID().toString()
         val ref = FirebaseStorage.getInstance().getReference("/images/$filename")
+        //putFile is used to upload local files nad images to the firebase server
         ref.putFile(selectedPhotoUri!!)
             .addOnSuccessListener {
                 Log.d("Register", "Sucessfully uploaded image: ${it.metadata?.path}")
